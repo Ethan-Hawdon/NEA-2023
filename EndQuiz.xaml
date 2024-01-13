@@ -1,0 +1,17 @@
+<Window x:Class="NEA_Document.EndQuiz"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:NEA_Document"
+        mc:Ignorable="d"
+        Title="EndQuiz" Height="450" Width="800">
+    <Grid>
+        <TextBlock x:Name="results" TextAlignment="Center" Padding="3" FontSize="20" TextWrapping="Wrap" Canvas.Left="104" Canvas.Top="330" Margin="100,63,100,277" Text=""/>
+        <TextBlock HorizontalAlignment="Left" Margin="633,27,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="20" Width="88"><Run Language="en-gb" Text="Your Skill Rating:"/></TextBlock>
+        <TextBlock x:Name="SkillRating" HorizontalAlignment="Left" Margin="734,27,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="29"/>
+        <TextBlock x:Name="repeatText" TextAlignment="Center" Padding="3" FontSize="20" TextWrapping="Wrap" Margin="100,201,100,147" Text="If you would like to try again, please press the Retry button. Otherwise, please press the Finish button."/>
+        <Button Content="Retry" HorizontalAlignment="Left" Margin="242,313,0,0" VerticalAlignment="Top" Height="28" Width="88" Click="RetryButton" FontWeight="Bold"/>
+        <Button Content="Finish" HorizontalAlignment="Left" Margin="470,313,0,0" VerticalAlignment="Top" Height="28" Width="77" FontWeight="Bold" Click="FinishButton"/>
+    </Grid>
+</Window>
