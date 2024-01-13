@@ -1,0 +1,17 @@
+<Window x:Class="NEA_Document.StartQuiz"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:NEA_Document"
+        mc:Ignorable="d"
+        Title="StartQuiz" Height="450" Width="800">
+    <Grid>
+        <TextBlock x:Name="WelcomeTxt" HorizontalAlignment="Left" Margin="298,83,0,0" TextAlignment="Center" TextWrapping="Wrap" FontSize="20" VerticalAlignment="Top" Text="Welcome"/>
+        <TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" FontSize="16" VerticalAlignment="Top" Height="156" Width="490" Margin="0,126,0,0"><Run Text="Upon pressing the &quot;Begin the test"/><Run Language="en-gb" Text="&quot;"/><Run Text=" button, you will be asked ten questions about Valorant. Your job is to choose one of the four answers that you believe is correct. Each correct answer will award you Skill Rating, while an incorrect answer will decrease your rating. Please do not attempt to end the test before answering the final question."/></TextBlock>
+        <Button Content="Begin the Test" HorizontalAlignment="Left" Margin="217,312,0,0" VerticalAlignment="Top" Height="28" Width="88" Click="beginTest" FontWeight="Bold"/>
+        <Button Content="Cancel" HorizontalAlignment="Left" Margin="480,312,0,0" VerticalAlignment="Top" Height="28" Width="77" FontWeight="Bold" Click="cancelButton"/>
+        <TextBlock HorizontalAlignment="Left" Margin="617,28,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="20" Width="88"><Run Language="en-gb" Text="Your Skill Rating:"/></TextBlock>
+        <TextBlock Name="SkillRating" HorizontalAlignment="Left" Margin="718,28,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="29"/>
+    </Grid>
+</Window>
